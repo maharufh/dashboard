@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Manager Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <span>File MG</span>
+      </div>
+      <div class="user-info">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmfqivKiGl0oh6CjzEpa0Y4vuvzRrhdETEaSQWKNTC5_XIWZKJXfZn7iH_fw3yWa7CS5E&usqp=CAU" alt="User">
+        <span>Ryan Aldridge</span>
+        <a href="#">Logout</a>
+      </div>
+      <nav class="menu">
+        <a href="#" class="active"><i class="fas fa-home"></i> Home</a>
+        <a href="#"><i class="fas fa-share-alt"></i> Shared File</a>
+        <a href="#"><i class="fas fa-star"></i> Starred</a>
+        <a href="#"><i class="fas fa-chart-line"></i> Statistics</a>
+        <a href="#"><i class="fas fa-cog"></i> Setting</a>
+        <a href="#"><i class="fas fa-life-ring"></i> Support</a>
+      </nav>
+      <button class="upload-btn">Upload File</button>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <!-- Top Navigation -->
+      <div class="top-nav">
+        <input type="text" placeholder="Search...">
+        <button class="create-btn">+ Create New</button>
+      </div>
+
+      <!-- Storage Cards -->
+      <div class="storage-cards">
+        <div class="card google-drive">
+          <h3>Google Drive</h3>
+          <p>70 Gb / 100 Gb</p>
+          <div class="progress"><div style="width: 70%;"></div></div>
+          <small>Last Change: 22.02.20</small>
+        </div>
+        <div class="card dropbox">
+          <h3>Dropbox</h3>
+          <p>7 Gb / 8 Gb</p>
+          <div class="progress"><div style="width: 87.5%;"></div></div>
+          <small>Last Change: 10.02.20</small>
+        </div>
+        <div class="card onedrive">
+          <h3>OneDrive</h3>
+          <p>7 Gb / 8 Gb</p>
+          <div class="progress"><div style="width: 87.5%;"></div></div>
+          <small>Last Change: 10.02.20</small>
+        </div>
+      </div>
+
+      <!-- Co-owners -->
+      <div class="co-owners">
+        <h3>Co-owners</h3>
+        <div class="owner-list">
+          <div class="owner">
+            <img src="https://www.afponline.org/images/default-source/default-album/certification_scholarship_tab_v2.jpg?sfvrsn=8b39e16b_0" alt="Owner">
+            <span>Oscar Gilbert <small>Can Edit</small></span>
+          </div>
+          <div class="owner">
+            <img src="https://www.afponline.org/images/default-source/afp_24_images/tab_ctp.jpg?sfvrsn=f535e76b_0" alt="Owner">
+            <span>Amelia Evans <small>Can View</small></span>
+          </div>
+          <div class="owner">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/037/098/807/small_2x/ai-generated-a-happy-smiling-professional-man-light-blurry-office-background-closeup-view-photo.jpg" alt="Owner">
+            <span>Thomas Flatcher <small>Can Edit</small></span>
+          </div>
+          <div class="owner">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuNOZPk1FPakLK7B73Y4uP6nZSktLDQ4jWctrA6cpu6VYeyLx7C2w_EJ19h3fW0pd1Pw8&usqp=CAU" alt="Owner">
+            <span>Emily Wilson <small>Can View</small></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Folders -->
+      <div class="folders">
+        <h3>Folders</h3>
+        <div class="folder-list">
+          <div class="folder">
+            <i class="fas fa-folder"></i>
+            <span>Dribbles <small>Last Change: 12.02.20</small></span>
+          </div>
+          <div class="folder">
+            <i class="fas fa-folder"></i>
+            <span>My Documents <small>Last Change: 12.02.20</small></span>
+          </div>
+          <div class="folder">
+            <i class="fas fa-folder"></i>
+            <span>Database <small>Last Change: 10.02.20</small></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Last File -->
+      <div class="last-files">
+        <h3>Last File</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Document Name</th>
+              <th>Size</th>
+              <th>Last Edit</th>
+              <th>Members</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><i class="fas fa-file"></i></td>
+              <td>Last Quarter Statistics</td>
+              <td>0.7 MB</td>
+              <td>10 March, 2020</td>
+              <td><i class="fas fa-user"></i> <i class="fas fa-user"></i></td>
+            </tr>
+            <tr>
+              <td><i class="fas fa-file"></i></td>
+              <td>Amelia</td>
+              <td>1.5 MB</td>
+              <td>11 March, 2020</td>
+              <td><i class="fas fa-user"></i> <i class="fas fa-user"></i></td>
+            </tr>
+            <tr>
+              <td><i class="fas fa-file"></i></td>
+              <td>February Stats</td>
+              <td>0.5 MB</td>
+              <td>11 March, 2020</td>
+              <td><i class="fas fa-user"></i> <i class="fas fa-user"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <!-- Right Sidebar -->
+    <aside class="right-sidebar">
+      <h3>Google Drive </h3>
+      <div class="storage-breakdown">
+        <div class="breakdown-item">
+          <span>Media Files</span><span>15 Gb</span>
+          <div class="progress"><div style="width: 30%;"></div></div>
+        </div>
+        <div class="breakdown-item">
+          <span>Images</span><span>10 Gb</span>
+          <div class="progress"><div style="width: 20%;"></div></div>
+        </div>
+        <div class="breakdown-item">
+          <span>Documents</span><span>7 Gb</span>
+          <div class="progress"><div style="width: 14%;"></div></div>
+        </div>
+        <div class="breakdown-item">
+          <span>Other Files</span><span>5 Gb</span>
+          <div class="progress"><div style="width: 10%;"></div></div>
+        </div>
+        <div class="breakdown-item">
+          <span>Unknown Files</span><span>8 Gb</span>
+          <div class="progress"><div style="width: 16%;"></div></div>
+        </div>
+      </div>
+      <div class="clear-memory">
+        <p>Clear Memory 124 MB from Temporary Files</p>
+        <button>Clear Memory</button>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>
